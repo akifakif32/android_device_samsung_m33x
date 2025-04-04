@@ -37,7 +37,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     # Camera
     'vendor/lib64/libexynoscamera3.so': blob_fixup()
-        .add_needed('libshim_camera.so'),
+        .add_needed('libshim_camera.so')
+        .binary_regex_replace(b'_ZN7android5Fence', b'_ZN7exynos55Fence'),
     # Keymint
     (
         'vendor/bin/hw/android.hardware.security.keymint-service.samsung',
