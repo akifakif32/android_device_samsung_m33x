@@ -33,3 +33,9 @@ PRODUCT_MODEL := SM-M336B
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_CHARACTERISTICS := phone
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="m33xxx-user 15 AP3A.240905.015.A2 M336BXXSDFYG2 release-keys" \
+    BuildFingerprint=samsung/m33xxx/essi:15/AP3A.240905.015.A2/M336BXXSDFYG2:user/release-keys \
+    DeviceProduct=m33xxx \
+    SystemName=m33xxx
