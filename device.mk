@@ -21,3 +21,9 @@ $(call inherit-product, device/samsung/s5e8825-common/common.mk)
 $(call inherit-product, vendor/samsung/m33x/m33x-vendor.mk)
 
 DEVICE_PATH := device/samsung/m33x
+
+# Audio
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
+    $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_gains.xml \
+    $(DEVICE_PATH)/configs/audio/audio_board_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_board_info.xml
