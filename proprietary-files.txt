@@ -83,7 +83,7 @@ vendor/firmware/SM-M336K/mfc_fw.bin|c9adf9aa07d2f1b1ec9e4e150430f028e5704cfe
 vendor/firmware/SM-M336K/os.checked.bin|f125016d8d13825d932795bf71897cddc0db8603
 
 # Keymint
-vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
+vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung;DISABLE_DEPS
 vendor/lib64/libskeymint10device.so
 vendor/lib64/libskeymint_cli.so
 
