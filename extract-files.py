@@ -4,9 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
+)
+from extract_utils.fixups_lib import (
+    lib_fixups_user_type,
 )
 
 namespace_imports = [
@@ -18,11 +25,46 @@ namespace_imports = [
     'vendor/samsung/s5e8825-common',
 ]
 
+
+def lib_fixup_device_dep(lib: str, partition: str, *args, **kwargs):
+    return f'//device/samsung/s5e8825-common/shims/stub:{lib}'
+
+
+lib_fixups: lib_fixups_user_type = {
+    'libexynoscamera3': lib_fixup_device_dep,
+}  # fmt: skip
+
+blob_fixups: blob_fixups_user_type = {
+    (
+        'vendor/bin/hw/android.hardware.security.keymint-service.samsung',
+        'vendor/lib64/libskeymint10device.so',
+        'vendor/lib64/libskeymint_cli.so',
+    ): blob_fixup()
+        .replace_needed('android.hardware.security.keymint-V1-ndk_platform.so',
+            'android.hardware.security.keymint-V4-ndk.so')
+        .replace_needed('android.hardware.security.keymint-V1-ndk_platform',
+            'android.hardware.security.keymint-V4-ndk')
+        .replace_needed('android.hardware.security.keymint-V1-ndk',
+            'android.hardware.security.keymint-V4-ndk')
+        .replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so',
+            'android.hardware.security.secureclock-V1-ndk.so')
+        .replace_needed('android.hardware.security.sharedsecret-V1-ndk_platform.so',
+             'android.hardware.security.sharedsecret-V1-ndk.so')
+        .add_needed('android.hardware.security.rkp-V3-ndk.so')
+        .replace_needed('libcrypto.so', 'libcrypto-tm.so')
+        .replace_needed('libssl.so', 'libssl-tm.so')
+        .add_needed('libshim_crypto.so'),
+    'vendor/lib64/libexynoscamera3.so': blob_fixup()
+        .add_needed('libshim_camera.so'),
+}  # fmt: skip
+
 module = ExtractUtilsModule(
     'm33x',
     'samsung',
     namespace_imports=namespace_imports,
     add_firmware_proprietary_file=True,
+    blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
 )
 
 if __name__ == '__main__':
