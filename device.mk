@@ -34,3 +34,6 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/init/init.m33x.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.m33x.rc
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
