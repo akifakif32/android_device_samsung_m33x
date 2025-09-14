@@ -26,7 +26,7 @@ namespace_imports = [
 ]
 
 
-def lib_fixup_device_dep(lib: str, partition: str, *args, **kwargs):
+def lib_fixup_device_dep(lib: str, partition: str):
     return f'//device/samsung/s5e8825-common/shims/stub:{lib}'
 
 
@@ -35,10 +35,10 @@ lib_fixups: lib_fixups_user_type = {
 }  # fmt: skip
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/bin/vaultkeeperd': blob_fixup()
-        .binary_regex_replace(rb'ro\.factory\.factory_binary', b'ro.vendor.factory_binary\x00'),
-    'vendor/lib64/libvkservice.so': blob_fixup()
-        .binary_regex_replace(rb'ro\.factory\.factory_binary', b'ro.vendor.factory_binary\x00'),
+    # Camera
+    'vendor/lib64/libexynoscamera3.so': blob_fixup()
+        .add_needed('libshim_camera.so'),
+    # Keymint
     (
         'vendor/bin/hw/android.hardware.security.keymint-service.samsung',
         'vendor/lib64/libskeymint10device.so',
@@ -58,8 +58,12 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libcrypto.so', 'libcrypto-tm.so')
         .replace_needed('libssl.so', 'libssl-tm.so')
         .add_needed('libshim_crypto.so'),
-    'vendor/lib64/libexynoscamera3.so': blob_fixup()
-        .add_needed('libshim_camera.so'),
+    # Vaultkeeper
+    (
+        'vendor/bin/vaultkeeperd',
+        'vendor/lib64/libvkservice.so',
+    ): blob_fixup()
+        .binary_regex_replace(rb'ro\.factory\.factory_binary', b'ro.vendor.factory_binary\x00'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
