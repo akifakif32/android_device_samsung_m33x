@@ -40,7 +40,8 @@ $(call soong_config_set,libfmjni,vendor,slsi)
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/init/init.m33x.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.m33x.rc
+    $(DEVICE_PATH)/configs/init/init.m33x.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.m33x.rc \
+    $(DEVICE_PATH)/configs/init/init.m33x.unify.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.m33x.unify.rc
 
 # Nfc
 PRODUCT_PACKAGES += android.hardware.nfc@1.2-service
