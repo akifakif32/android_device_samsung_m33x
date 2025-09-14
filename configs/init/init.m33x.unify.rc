@@ -1,2 +1,25 @@
-on early-init
+# m33xxx (eur_open)
+on early-init && property:ro.boot.em.model=SM-M336B
+    # Firmware blobs
+    mount none /vendor/firmware/SM-M336B/mfc_fw.bin /vendor/firmware/mfc_fw.bin bind
+    mount none /vendor/firmware/SM-M336B/NPU.bin /vendor/firmware/NPU.bin bind
+    mount none /vendor/firmware/SM-M336B/os.checked.bin /vendor/firmware/os.checked.bin bind
+    mount none /vendor/firmware/SM-M336B/vts.bin /vendor/firmware/vts.bin bind
+    mount none /vendor/firmware/SM-M336B/calliope_sram.bin /vendor/firmware/calliope_sram.bin bind
+    # TEEgris
     mount none /vendor/tee/SM-M336B /vendor/tee bind
+
+# m33xktt (kor_ktt)
+on early-init && property:ro.boot.em.model=SM-M336K
+    # Firmware blobs
+    mount none /vendor/firmware/SM-M336K/mfc_fw.bin /vendor/firmware/mfc_fw.bin bind
+    mount none /vendor/firmware/SM-M336K/NPU.bin /vendor/firmware/NPU.bin bind
+    mount none /vendor/firmware/SM-M336K/os.checked.bin /vendor/firmware/os.checked.bin bind
+    mount none /vendor/firmware/SM-M336K/vts.bin /vendor/firmware/vts.bin bind
+    mount none /vendor/firmware/SM-M336K/calliope_sram.bin /vendor/firmware/calliope_sram.bin bind
+    # TEEgris
+    mount none /vendor/tee/SM-M336K /vendor/tee bind
+
+# Restart just to be safe.
+on boot
+    restart audioserver
