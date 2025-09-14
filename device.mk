@@ -14,21 +14,21 @@
 # limitations under the License.
 #
 
-# Inherit from the common tree
-$(call inherit-product, device/samsung/s5e8825-common/common.mk)
-
-# Inherit the proprietary files
+# Inherit proprietary files
 $(call inherit-product, vendor/samsung/m33x/m33x-vendor.mk)
 
-# Setup dalvik vm configs
+# Inherit common makefile
+$(call inherit-product, device/samsung/s5e8825-common/common.mk)
+
+# Inherit Dalvik VM configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 DEVICE_PATH := device/samsung/m33x
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_gains.xml \
+    $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     $(DEVICE_PATH)/configs/audio/audio_board_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_board_info.xml
 
 # FM Radio

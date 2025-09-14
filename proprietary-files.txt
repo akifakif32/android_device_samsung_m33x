@@ -1,6 +1,6 @@
 # Proprietary files - from Samsung package version M336BXXSDFYG2, unless pinned
 
-# Audio Firmware
+# Audio - Firmware
 vendor/firmware/APBargeIn_AUDIO_SLSI.bin
 vendor/firmware/SoundBoosterParam.bin
 vendor/firmware/a2dpcom.bin
@@ -9,25 +9,25 @@ vendor/firmware/abox_tplg.conf
 vendor/firmware/calliope_dram.bin
 vendor/firmware/sb_music.bin
 
-# Audio Firmware
+# Audio - Firmware - for SM-M336B
 vendor/firmware/APDV_AUDIO_SLSI.bin:vendor/firmware/SM-M336B/APDV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin:vendor/firmware/SM-M336B/AP_AUDIO_SLSI.bin
 vendor/firmware/calliope_sram.bin:vendor/firmware/SM-M336B/calliope_sram.bin
 vendor/firmware/vts.bin:vendor/firmware/SM-M336B/vts.bin
 
-# Audio Firmware - from SM-M336K - M336KKSSBFYH1
+# Audio - Firmware - from SM-M336K - M336KKSSBFYH1
 vendor/firmware/SM-M336K/APDV_AUDIO_SLSI.bin|0ec04bb500000a3d21d13e8ca195afcdc36f256f
 vendor/firmware/SM-M336K/AP_AUDIO_SLSI.bin|29989f60d6365a69145f099ca923ba4588c586cf
 vendor/firmware/SM-M336K/calliope_sram.bin|7b16627e3f532eca75c51be2570ceb8bc3808268
 vendor/firmware/SM-M336K/vts.bin|bc2a1e43499288efea8265a451d495cd4bd68041
 
-# Bluetooth Firmware
+# Bluetooth - Firmware
 vendor/etc/wifi/mx140_bt.hcf
 
 # Camera
 vendor/lib64/hw/camera.s5e8825.so
 
-# Camera dependencies
+# Camera - Dependencies
 vendor/lib64/libMERTA.so
 vendor/lib64/libexynoscamera_merta_plugin.so
 vendor/lib64/libexynoscamera_swlme_plugin.so
@@ -36,7 +36,7 @@ vendor/lib64/liblmecpu.so
 vendor/lib64/libsec2lsi_conversion.so
 vendor/lib64/libswlme.so
 
-# Patched Camera HAL
+# Camera - Patched HAL
 vendor/lib64/libexynoscamera3.so|13028f62282d84df1557e51910ddf0c97a670558|ba17806451697a0cf5d19863eeb024498e7c309d
 
 # Fingerprint
@@ -71,7 +71,7 @@ vendor/firmware/tfa98xx.cnt
 vendor/firmware/txse1.bin
 vendor/firmware/txse2.bin
 
-# Firmware
+# Firmware - for SM-M336B
 vendor/firmware/NPU.bin:vendor/firmware/SM-M336B/NPU.bin
 vendor/firmware/mfc_fw.bin:vendor/firmware/SM-M336B/mfc_fw.bin
 vendor/firmware/os.checked.bin:vendor/firmware/SM-M336B/os.checked.bin
@@ -86,13 +86,13 @@ vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.ha
 vendor/lib64/libskeymint10device.so
 vendor/lib64/libskeymint_cli.so
 
-# Ramdisk firmware
+# Ramdisk - Firmware
 vendor/firmware/nt36672_m33x_csot.bin:vendor_ramdisk/vendor/firmware/nt36672_m33x_csot.bin
 vendor/firmware/nt36672_m33x_csot_mp.bin:vendor_ramdisk/vendor/firmware/nt36672_m33x_csot_mp.bin
 vendor/firmware/nt36672_m33x_tianma.bin:vendor_ramdisk/vendor/firmware/nt36672_m33x_tianma.bin
 vendor/firmware/nt36672_m33x_tianma.bin:vendor_ramdisk/vendor/firmware/nt36672_m33x_tianma_mp.bin
 
-# Recovery firmware
+# Recovery - Firmware
 vendor/firmware/nt36672_m33x_csot.bin:recovery/root/vendor/firmware/nt36672_m33x_csot.bin
 vendor/firmware/nt36672_m33x_csot_mp.bin:recovery/root/vendor/firmware/nt36672_m33x_csot_mp.bin
 vendor/firmware/nt36672_m33x_tianma.bin:recovery/root/vendor/firmware/nt36672_m33x_tianma.bin
@@ -101,7 +101,7 @@ vendor/firmware/nt36672_m33x_tianma.bin:recovery/root/vendor/firmware/nt36672_m3
 # RIL
 vendor/etc/floating_feature.xml
 
-# TEEgris Firmware
+# TEEgris - Firmware - for SM-M336B
 vendor/tee/driver/00000000-0000-0000-0000-494363447256:vendor/tee/SM-M336B/driver/00000000-0000-0000-0000-494363447256
 vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374:vendor/tee/SM-M336B/driver/00000000-0000-0000-0000-4d53546d7374
 vendor/tee/driver/00000000-0000-0000-0000-53626f786476:vendor/tee/SM-M336B/driver/00000000-0000-0000-0000-53626f786476
@@ -139,6 +139,11 @@ vendor/tee/00000000-0000-0000-0000-6d73745f5441:vendor/tee/SM-M336B/00000000-000
 vendor/tee/ffffffff-0000-0000-0000-000000000030:vendor/tee/SM-M336B/ffffffff-0000-0000-0000-000000000030
 
 # TEEgris Firmware - from SM-M336K - M336KKSSBFYH1
+vendor/tee/SM-M336K/driver/00000000-0000-0000-0000-494363447256|0a0099ed8bc3554ce1beed7587b27d340232301b
+vendor/tee/SM-M336K/driver/00000000-0000-0000-0000-4d53546d7374|911678156b210082b482eb9ea5032d0ef7e14c84
+vendor/tee/SM-M336K/driver/00000000-0000-0000-0000-53626f786476|41bed92cda763fa8ffcd3c08cf4c94c823bd6dd3
+vendor/tee/SM-M336K/driver/00000000-0000-0000-0000-564c544b4456|1bff62c5232cf1cf16267cedec511c41085c6619
+vendor/tee/SM-M336K/tui/resolution_common/ID00000100|a091703ae478a3da9b16201f559d296a665d7b8d
 vendor/tee/SM-M336K/00000000-0000-0000-0000-000000010081|deea6eec9e882ceac581c97b2acb61be6a57080f
 vendor/tee/SM-M336K/00000000-0000-0000-0000-000000020081|72f969268323bd4337b46287cc01978186c71481
 vendor/tee/SM-M336K/00000000-0000-0000-0000-000000534b4d|1a1cdc8c0f63a81fe401a5a73b97f3f79def04f6
@@ -168,12 +173,7 @@ vendor/tee/SM-M336K/00000000-0000-0000-0000-657365636f6d|f5aa03b9e931a924b138001
 vendor/tee/SM-M336K/00000000-0000-0000-0000-6b6e78677564|e275801673dfb0f972f1a94df0068d4cb1ca6635
 vendor/tee/SM-M336K/00000000-0000-0000-0000-6d706f667376|9f2349950a3be3a3d1bc5eb3b19322dbcf0b1e24
 vendor/tee/SM-M336K/00000000-0000-0000-0000-6d73745f5441|826bbbbf93e672e0bf372680ef2b2ac3eab1d4a1
-vendor/tee/SM-M336K/driver/00000000-0000-0000-0000-494363447256|0a0099ed8bc3554ce1beed7587b27d340232301b
-vendor/tee/SM-M336K/driver/00000000-0000-0000-0000-4d53546d7374|911678156b210082b482eb9ea5032d0ef7e14c84
-vendor/tee/SM-M336K/driver/00000000-0000-0000-0000-53626f786476|41bed92cda763fa8ffcd3c08cf4c94c823bd6dd3
-vendor/tee/SM-M336K/driver/00000000-0000-0000-0000-564c544b4456|1bff62c5232cf1cf16267cedec511c41085c6619
 vendor/tee/SM-M336K/ffffffff-0000-0000-0000-000000000030|7d12477903c11aa5dd4018a8ddb7652a3e1e8d05
-vendor/tee/SM-M336K/tui/resolution_common/ID00000100|a091703ae478a3da9b16201f559d296a665d7b8d
 
 # VaultKeeper
 vendor/bin/vaultkeeperd

@@ -1,5 +1,4 @@
 # Firmware for model SM-M336B - from Samsung package version M336BXXSDFYG2
-
 fld.bin_SM-M336B|6820998c894c079fbc31dabf651902a52a975cc9
 harx.bin_SM-M336B|27bcc1d68e00ae91fe4b9ce0cafff02d9e87cfb9
 keystorage.bin_SM-M336B|ab4d19b35a91034c594a6855608cf1edd79a37dc
@@ -13,7 +12,6 @@ uh.bin_SM-M336B|db8ccbb4c5dcd4f5596ae51ff91084c324a2e3b3
 up_param.bin_SM-M336B|a422139c35ae686ed0da1bfe470d76f8a614447d
 
 # Firmware for model SM-M336K - from Samsung package version M336KKSSBFYH1
-
 fld.bin_SM-M336K|97fa53eb6c60cd6efeb386e3278f20c35549ba35
 harx.bin_SM-M336K|395461d4a339de61c75d18552fc04492021db433
 keystorage.bin_SM-M336K|7e2da449fb2c0596f7152937195362c1b19b8981
