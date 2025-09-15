@@ -2,6 +2,7 @@
 
 # Audio - Firmware
 vendor/firmware/APBargeIn_AUDIO_SLSI.bin
+vendor/firmware/APBiBF_AUDIO_SLSI.bin
 vendor/firmware/SoundBoosterParam.bin
 vendor/firmware/a2dpcom.bin
 vendor/firmware/abox_tplg.bin
