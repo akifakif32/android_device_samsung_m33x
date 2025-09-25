@@ -176,14 +176,6 @@ vendor/tee/SM-M336K/00000000-0000-0000-0000-6d706f667376|9f2349950a3be3a3d1bc5eb
 vendor/tee/SM-M336K/00000000-0000-0000-0000-6d73745f5441|826bbbbf93e672e0bf372680ef2b2ac3eab1d4a1
 vendor/tee/SM-M336K/ffffffff-0000-0000-0000-000000000030|7d12477903c11aa5dd4018a8ddb7652a3e1e8d05
 
-# VaultKeeper
-vendor/bin/vaultkeeperd
-vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
-vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
-vendor/lib64/libstork_shared.so
-vendor/lib64/libvkservice.so
-vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
-
 # Wi-Fi
 vendor/etc/wifi/mx140_common.hcf
 vendor/etc/wifi/mx140_t_wlan.hcf
