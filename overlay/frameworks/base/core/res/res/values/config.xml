@@ -94,30 +94,24 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessDisplayValuesNits">
-        <item>11</item>
-        <item>15</item>
-        <item>22</item>
-        <item>26</item>
-        <item>31</item>
-        <item>35</item>
-        <item>46</item>
-        <item>62</item>
-        <item>79</item>
-        <item>88</item>
-        <item>93</item>
-        <item>99</item>
-        <item>111</item>
-        <item>130</item>
-        <item>190</item>
+        <item>5</item>
+        <item>12</item>
+        <item>20</item>
+        <item>30</item>
+        <item>45</item>
+        <item>65</item>
+        <item>90</item>
+        <item>120</item>
+        <item>160</item>
+        <item>210</item>
+        <item>270</item>
         <item>340</item>
-        <item>500</item>
-        <item>650</item>
+        <item>420</item>
+        <item>510</item>
+        <item>600</item>
+        <item>700</item>
         <item>800</item>
-        <item>1000</item>
-        <item>1000</item>
-        <item>1000</item>
-        <item>1000</item>
-        <item>1000</item>
+        <item>900</item>
         <item>1000</item>
     </integer-array>
 
@@ -143,17 +137,23 @@
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
+        <item>2</item>
         <item>5</item>
-        <item>6</item>
+        <item>10</item>
+        <item>20</item>
         <item>50</item>
         <item>100</item>
-        <item>500</item>
+        <item>200</item>
+        <item>400</item>
+        <item>800</item>
         <item>1500</item>
         <item>3000</item>
-        <item>4999</item>
-        <item>5000</item>
-        <item>19999</item>
-        <item>20000</item>
+        <item>6000</item>
+        <item>12000</item>
+        <item>25000</item>
+        <item>50000</item>
+        <item>100000</item>
+        <item>200000</item>
     </integer-array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
