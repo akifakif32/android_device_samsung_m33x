@@ -26,7 +26,7 @@ namespace_imports = [
 ]
 
 
-def lib_fixup_device_dep(lib: str, partition: str):
+def lib_fixup_device_dep(lib: str, *_):
     return f'//device/samsung/s5e8825-common/shims/stub:{lib}'
 
 
