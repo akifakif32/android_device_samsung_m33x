@@ -1,6 +1,8 @@
 # m33xxx (eur_open)
 on early-init && property:ro.boot.em.model=SM-M336B
     # Firmware blobs
+    mount none /vendor/firmware/SM-M336B/APDV_AUDIO_SLSI.bin /vendor/firmware/APDV_AUDIO_SLSI.bin bind
+    mount none /vendor/firmware/SM-M336B/AP_AUDIO_SLSI.bin /vendor/firmware/AP_AUDIO_SLSI.bin bind
     mount none /vendor/firmware/SM-M336B/mfc_fw.bin /vendor/firmware/mfc_fw.bin bind
     mount none /vendor/firmware/SM-M336B/NPU.bin /vendor/firmware/NPU.bin bind
     mount none /vendor/firmware/SM-M336B/os.checked.bin /vendor/firmware/os.checked.bin bind
@@ -12,6 +14,8 @@ on early-init && property:ro.boot.em.model=SM-M336B
 # m33xins (swa_open)
 on early-init && property:ro.boot.em.model=SM-M336BU
     # Firmware blobs
+    mount none /vendor/firmware/SM-M336BU/APDV_AUDIO_SLSI.bin /vendor/firmware/APDV_AUDIO_SLSI.bin bind
+    mount none /vendor/firmware/SM-M336BU/AP_AUDIO_SLSI.bin /vendor/firmware/AP_AUDIO_SLSI.bin bind
     mount none /vendor/firmware/SM-M336BU/mfc_fw.bin /vendor/firmware/mfc_fw.bin bind
     mount none /vendor/firmware/SM-M336BU/NPU.bin /vendor/firmware/NPU.bin bind
     mount none /vendor/firmware/SM-M336BU/os.checked.bin /vendor/firmware/os.checked.bin bind
@@ -23,6 +27,8 @@ on early-init && property:ro.boot.em.model=SM-M336BU
 # m33xktt (kor_ktt)
 on early-init && property:ro.boot.em.model=SM-M336K
     # Firmware blobs
+    mount none /vendor/firmware/SM-M336K/APDV_AUDIO_SLSI.bin /vendor/firmware/APDV_AUDIO_SLSI.bin bind
+    mount none /vendor/firmware/SM-M336K/AP_AUDIO_SLSI.bin /vendor/firmware/AP_AUDIO_SLSI.bin bind
     mount none /vendor/firmware/SM-M336K/mfc_fw.bin /vendor/firmware/mfc_fw.bin bind
     mount none /vendor/firmware/SM-M336K/NPU.bin /vendor/firmware/NPU.bin bind
     mount none /vendor/firmware/SM-M336K/os.checked.bin /vendor/firmware/os.checked.bin bind
