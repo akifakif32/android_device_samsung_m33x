@@ -1,5 +1,5 @@
 #
-# Copyright (C) The LineageOS Project
+# Copyright (C) The The Infinity-X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,3 +29,4 @@ BOARD_HAVE_SLSI_FM := true
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
