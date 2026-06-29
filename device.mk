@@ -28,7 +28,6 @@ DEVICE_PATH := device/samsung/m33x
 # Audio - Configuration
 PRODUCT_PACKAGES += \
     audio_board_info.xml \
-    mixer_gains.xml \
     mixer_paths.xml
 
 # FM Radio
