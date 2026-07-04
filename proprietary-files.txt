@@ -1,4 +1,4 @@
-# Proprietary files - from Samsung package version M336BXXSDGYJ2, unless pinned
+# Proprietary files - from Samsung package version M336BXXSGGZE1, unless pinned
 
 # Audio - Firmware
 vendor/firmware/APBargeIn_AUDIO_SLSI.bin
@@ -16,17 +16,17 @@ vendor/firmware/AP_AUDIO_SLSI.bin:vendor/firmware/SM-M336B/AP_AUDIO_SLSI.bin
 vendor/firmware/calliope_sram.bin:vendor/firmware/SM-M336B/calliope_sram.bin
 vendor/firmware/vts.bin:vendor/firmware/SM-M336B/vts.bin
 
-# Audio - Firmware - from SM-M336BU - M336BUXXSDFYH1
+# Audio - Firmware - from SM-M336BU - M336BUXXSGGZE1
 vendor/firmware/SM-M336BU/APDV_AUDIO_SLSI.bin|a576b3c273ab00339aba7436f56b2fac767af9a0
 vendor/firmware/SM-M336BU/AP_AUDIO_SLSI.bin|7109c268a206d8d03c60384f5d2941b273ba8ae4
-vendor/firmware/SM-M336BU/calliope_sram.bin|910d0fc056175780630278d5ba5457363aef2022
-vendor/firmware/SM-M336BU/vts.bin|07cb52df0281eac29807b4c2b6ed21045ba547d4
+vendor/firmware/SM-M336BU/calliope_sram.bin|995c6784f00b4c9e3aa79e3b7a5a9ee4ce4bfcea
+vendor/firmware/SM-M336BU/vts.bin|e06082831847fee894cc4af236f844bb4b34fe82
 
-# Audio - Firmware - from SM-M336K - M336KKSSBFYH1
+# Audio - Firmware - from SM-M336K - M336KKSSEGZE1
 vendor/firmware/SM-M336K/APDV_AUDIO_SLSI.bin|0ec04bb500000a3d21d13e8ca195afcdc36f256f
 vendor/firmware/SM-M336K/AP_AUDIO_SLSI.bin|29989f60d6365a69145f099ca923ba4588c586cf
-vendor/firmware/SM-M336K/calliope_sram.bin|7b16627e3f532eca75c51be2570ceb8bc3808268
-vendor/firmware/SM-M336K/vts.bin|bc2a1e43499288efea8265a451d495cd4bd68041
+vendor/firmware/SM-M336K/calliope_sram.bin|e420d93abd028b636b3e1b47cd11a77dad3ca632
+vendor/firmware/SM-M336K/vts.bin|adacf90d50b453c39693ace716e9b902bf27a194
 
 # Audio - Firmware - Placeholders
 vendor/firmware/APDV_AUDIO_SLSI.bin|da39a3ee5e6b4b0d3255bfef95601890afd80709
@@ -36,11 +36,11 @@ vendor/firmware/vts.bin|da39a3ee5e6b4b0d3255bfef95601890afd80709
 
 # Audio - SoundBooster
 vendor/etc/SoundBoosterParam.txt
-vendor/lib64/lib_SoundBooster_ver1130.so
+vendor/lib64/lib_SoundBooster_ver1100.so
 vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
 
 # Audio - SoundAlive
-vendor/lib64/lib_SoundAlive_play_plus_ver500.so
+vendor/lib64/lib_SoundAlive_play_plus_ver400.so
 vendor/lib64/soundfx/libaudiosaplus_sec.so
 
 # Bluetooth - Firmware

@@ -32,7 +32,7 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'_ZN7android5Fence', b'_ZN7exynos55Fence'),
     # NFC
     'vendor/lib64/nfc_nci_nxpsn.so': blob_fixup()
-        .add_needed('libbase_shim.so')
+        .add_needed('libbase_shim.so'),
     # Audio - Effects
     'vendor/etc/floating_feature.xml': blob_fixup().regex_replace(
         r'(?m)^</SecFloatingFeatureSet>$',
