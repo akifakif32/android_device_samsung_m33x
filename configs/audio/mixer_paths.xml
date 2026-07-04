@@ -393,13 +393,13 @@
     <ctl name="ABOX SPUM POSTTUNE0 SEL" value="RESERVED" />
     <ctl name="ABOX SPUM0 PREGAIN EN" value="0" />
     <ctl name="ABOX SPUM0 PREGAIN FUNC" value="MUTE" />
-    <ctl name="ABOX SPUM0 PREGAIN CH0 Main Volume" value="32" />
+    <ctl name="ABOX SPUM0 PREGAIN CH0 Main Volume" value="37" />
     <ctl name="ABOX SPUM0 PREGAIN CH0 Fine Volume" value="0" />
-    <ctl name="ABOX SPUM0 PREGAIN CH1 Main Volume" value="32" />
+    <ctl name="ABOX SPUM0 PREGAIN CH1 Main Volume" value="37" />
     <ctl name="ABOX SPUM0 PREGAIN CH1 Fine Volume" value="0" />
-    <ctl name="ABOX SPUM0 PREGAIN CH2 Main Volume" value="32" />
+    <ctl name="ABOX SPUM0 PREGAIN CH2 Main Volume" value="37" />
     <ctl name="ABOX SPUM0 PREGAIN CH2 Fine Volume" value="0" />
-    <ctl name="ABOX SPUM0 PREGAIN CH3 Main Volume" value="32" />
+    <ctl name="ABOX SPUM0 PREGAIN CH3 Main Volume" value="37" />
     <ctl name="ABOX SPUM0 PREGAIN CH3 Fine Volume" value="0" />
     <ctl name="ABOX SPUM0 PREGAIN VOL CHANGE FADE IN" value="0" />
     <ctl name="ABOX SPUM0 PREGAIN VOL CHANGE FADE OUT" value="0" />
