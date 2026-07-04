@@ -98,15 +98,15 @@ vendor/firmware/NPU.bin:vendor/firmware/SM-M336B/NPU.bin
 vendor/firmware/mfc_fw.bin:vendor/firmware/SM-M336B/mfc_fw.bin
 vendor/firmware/os.checked.bin:vendor/firmware/SM-M336B/os.checked.bin
 
-# Firmware - from SM-M336BU - M336BUXXSDFYH1
-vendor/firmware/SM-M336BU/NPU.bin|e149031c26631fb6c7aa6ca3d87b6928cdc8c446
-vendor/firmware/SM-M336BU/mfc_fw.bin|f29d4b737381bd834cedbb238e229e43f1ed31a1
-vendor/firmware/SM-M336BU/os.checked.bin|b2f1014b956fa054b1a7d4e04fd424ed2d9a3961
+# Firmware - from SM-M336BU - M336BUXXSGGZE1
+vendor/firmware/SM-M336BU/NPU.bin|0713514145c6cb38bf611120e27032e6e5fd1533
+vendor/firmware/SM-M336BU/mfc_fw.bin|cb01e19415cc37edde5adc3946250ed29a502258
+vendor/firmware/SM-M336BU/os.checked.bin|c7c2cbec3411264ef70f7a0181f76f91c49bdcaf
 
-# Firmware - from SM-M336K - M336KKSSBFYH1
-vendor/firmware/SM-M336K/NPU.bin|a651428700c97a6c122c547a57bf24ab1f703ce9
-vendor/firmware/SM-M336K/mfc_fw.bin|c9adf9aa07d2f1b1ec9e4e150430f028e5704cfe
-vendor/firmware/SM-M336K/os.checked.bin|f125016d8d13825d932795bf71897cddc0db8603
+# Firmware - from SM-M336K - M336KKSSEGZE1
+vendor/firmware/SM-M336K/NPU.bin|f5775b07ffa5ebb28b33da5633e4c71e13de6338
+vendor/firmware/SM-M336K/mfc_fw.bin|ded76098f108202ad02b1c2c09e7c61fcce1c65c
+vendor/firmware/SM-M336K/os.checked.bin|1b2f53af840d8c4e469ba3c204909cbcf7e9ba20
 
 # Firmware - Placeholders
 vendor/firmware/NPU.bin|da39a3ee5e6b4b0d3255bfef95601890afd80709
