@@ -35,7 +35,7 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,libfmjni,vendor,slsi)
 
-$(call soong_config_set,s5e8825,soundbooster_dsp_library,//vendor/samsung/m33x:lib_SoundBooster_ver1100)
+$(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsung/m33x:lib_SoundBooster_ver1100)
 
 # Init
 PRODUCT_PACKAGES += \
