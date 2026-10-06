@@ -28,13 +28,6 @@ DEVICE_PATH := device/samsung/m33x
 # Audio - Configuration
 PRODUCT_PACKAGES += mixer_paths.xml
 
-# FM Radio
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
-
-$(call soong_config_set,libfmjni,vendor,slsi)
-
 $(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsung/m33x:lib_SoundBooster_ver1100)
 
 # Init

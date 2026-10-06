@@ -24,9 +24,6 @@ DEVICE_PATH := device/samsung/m33x
 # DTBO
 BOARD_DTBO_CFG := $(DEVICE_PATH)/configs/m33x.cfg
 
-# FM Radio
-BOARD_HAVE_SLSI_FM := true
-
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
